@@ -10,19 +10,17 @@ public class Login {
 		vastaus[2] = "0";
 		//array johon tulevat käyttäjän vastaukset
 System.out.println("Etunimi?");
-
-
 	vastaus[0] = in.nextLine();
 
 System.out.println("Sukunimi?");
-
 	vastaus[1] = in.nextLine();
-System.out.println("yrityksen verkkotunnus?");
 
+System.out.println("yrityksen verkkotunnus?");
 	vastaus[2] = in.nextLine();
-for (int i =0; i < vastaus.length ; i++) {
-	if(vastaus[i].equals("")) {
-		System.out.println("Virhe! Jokin tiedoista puuttui.");
+	
+		for (int i =0; i < vastaus.length ; i++) {
+			if(vastaus[i].equals("")) {
+				System.out.println("Virhe! Jokin tiedoista puuttui.");
 		//if lauseke mikäli käyttäjä ei syötä kaikkia tietoja.
 	}
 }
@@ -30,17 +28,16 @@ GenerateEmail(vastaus);
 GenerateUsername(vastaus);
 	}//maini loppuu
 public static void GenerateEmail(String vastaus[]) {
-	System.out.println(vastaus[0] + "." + vastaus[1] + "@" + vastaus[2]);
+	System.out.println(vastaus[0].toLowerCase() + "." + vastaus[1].toLowerCase() + "@" + vastaus[2].toLowerCase());
 	//methodi hakee arrayn vastauksista tarvittavat tiedot ja tulostaa ne
 }
 public static void GenerateUsername(String vastaus[]) {
-	System.out.print(vastaus[0].substring(0, 4));
-//	for (int i =0; i < vastaus[1].length() ; i++) {
-//		System.out.print(vastaus[1].substring(4));
-//		}
+	System.out.print(vastaus[0].substring(0, 4).toLowerCase());
+	//hakee etunimen 4 ensimmäistä kirjainta substringillä
 	String vikat4 = vastaus[1].substring(vastaus[1].length() - 4);
-    System.out.print(vikat4);
+		System.out.print(vikat4.toLowerCase());
+    //hakee sukunimen 4 viimeistä kirjainta
 
 }
-
+	//.toLowerCase() tekee tekstin pienillä kirjaimilla
 }
