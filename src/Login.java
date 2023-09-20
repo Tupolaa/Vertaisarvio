@@ -24,6 +24,13 @@ for (int i =0; i < vastaus.length ; i++) {
 		System.out.println("Virhe! Jokin tiedoista puuttui.");
 	}
 }
-	}
+GenerateEmail(vastaus);
+	}//maini loppuu
+public static void GenerateEmail(String vastaus[]) {
+	System.out.println(vastaus[0] + "." + vastaus[1] + "@" + vastaus[2]);
+}
+public static void GenerateUsername() {
+	
+}
 
 }
