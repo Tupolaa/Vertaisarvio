@@ -8,8 +8,9 @@ public class Login {
 		vastaus[0] = "0";
 		vastaus[1] = "0";
 		vastaus[2] = "0";
+		//array johon tulevat käyttäjän vastaukset
 System.out.println("Etunimi?");
-//vastaus1 = in.nextLine();
+
 
 	vastaus[0] = in.nextLine();
 
@@ -22,15 +23,24 @@ System.out.println("yrityksen verkkotunnus?");
 for (int i =0; i < vastaus.length ; i++) {
 	if(vastaus[i].equals("")) {
 		System.out.println("Virhe! Jokin tiedoista puuttui.");
+		//if lauseke mikäli käyttäjä ei syötä kaikkia tietoja.
 	}
 }
 GenerateEmail(vastaus);
+GenerateUsername(vastaus);
 	}//maini loppuu
 public static void GenerateEmail(String vastaus[]) {
 	System.out.println(vastaus[0] + "." + vastaus[1] + "@" + vastaus[2]);
+	//methodi hakee arrayn vastauksista tarvittavat tiedot ja tulostaa ne
 }
-public static void GenerateUsername() {
-	
+public static void GenerateUsername(String vastaus[]) {
+	System.out.print(vastaus[0].substring(0, 4));
+//	for (int i =0; i < vastaus[1].length() ; i++) {
+//		System.out.print(vastaus[1].substring(4));
+//		}
+	String vikat4 = vastaus[1].substring(vastaus[1].length() - 4);
+    System.out.print(vikat4);
+
 }
 
 }
