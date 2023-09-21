@@ -24,7 +24,7 @@ Boolean  totta = false;
 				if(vastaus[0].isEmpty() ||vastaus[1].isEmpty() || vastaus[2].isEmpty()){
 					System.out.println("Virhe! Jokin tiedoista puuttui.");
 						totta = false;
-	//if lauseke mikäli käyttäjä ei syötä kaikkia tietoja.
+			//if lauseke mikäli käyttäjä ei syötä kaikkia tietoja.
 				} else {
 					totta = true;
 					}
