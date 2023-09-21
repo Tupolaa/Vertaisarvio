@@ -36,7 +36,7 @@ Boolean  totta = false;
 	}//maini loppuu
 public static void GenerateEmail(String vastaus[]) {
 	
-	System.out.println("Sähköpostiosoite:\n" + vastaus[0].toLowerCase() + "." + vastaus[1].toLowerCase() + "@" + vastaus[2].toLowerCase() + "\n");
+	System.out.println("\nSähköpostiosoite:\n" + vastaus[0].toLowerCase() + "." + vastaus[1].toLowerCase() + "@" + vastaus[2].toLowerCase() + "\n");
 	//methodi hakee arrayn vastauksista tarvittavat tiedot ja tulostaa ne
 }
 public static void GenerateUsername(String vastaus[]) {
