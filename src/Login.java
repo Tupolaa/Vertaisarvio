@@ -20,7 +20,7 @@ Scanner in = new Scanner(System.in);
 in.close();
 Boolean  totta = false;
 			//for (int i =0; i < vastaus.length ; i++) {
-			//Yritin ensin tehdä for loopilla, että käy arrayn läpi, mutta ei jos
+		
 				if(vastaus[0].isEmpty() ||vastaus[1].isEmpty() || vastaus[2].isEmpty()){
 					System.out.println("Virhe! Jokin tiedoista puuttui.");
 						totta = false;
